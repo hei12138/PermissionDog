@@ -28,8 +28,11 @@
                                            @NonNull int[] grantResults) {
         PermissionDog.getInstance().notifyPermissionsChanged(MainActivity.this, requestCode, permissions, grantResults);
     }
+    
 2.在你需要申请权限的地方初始去添加一下代码
+
 请求单个权限
+
    private void requestSinglePermission() {
         PermissionDog.getInstance().SetAction(new PermissionDog.PermissionDogAction() {
             @Override
