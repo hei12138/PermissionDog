@@ -6,7 +6,7 @@
 
 没想到什么好名字 既然有权限，那就叫权限狗吧
 #使用截图
-![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
+![image](https://github.com/hei12138/PermissionDog/blob/master/app/src/main/java/com/example/hei123/permissiondog/ScreenShot/failed_to_get_multi_permission.jpg)
 #特性
 
 1：支持单个和多个权限的申请
