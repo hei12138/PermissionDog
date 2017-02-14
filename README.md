@@ -21,18 +21,20 @@
 #使用
 
 1.在你需要申请权限的Activity中重写onRequestPermissionsResult
-
+```java
   @Override
     public void onRequestPermissionsResult(int requestCode,
                                            @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {
         PermissionDog.getInstance().notifyPermissionsChanged(MainActivity.this, requestCode, permissions, grantResults);
     }
+  ```
     
 2.在你需要申请权限的地方初始去添加一下代码
 
 请求单个权限
 
+```java
    private void requestSinglePermission() {
         PermissionDog.getInstance().SetAction(new PermissionDog.PermissionDogAction() {
             @Override
@@ -64,9 +66,10 @@
         });
         PermissionDog.getInstance().requestSinglePermissions(MainActivity.this, singlePermission);
     }
+    ```
     
     请求多个权限  
-    
+    ```java
     private void requestMultiPermission() {
         PermissionDog.getInstance().SetAction(new PermissionDog.PermissionDogAction() {
             @Override
@@ -123,6 +126,7 @@
         PermissionDog.getInstance().requestMultiPermissions(MainActivity.this, multiPermission);
 
     }
+    ```
 　　3.运行
 
 #解释：
