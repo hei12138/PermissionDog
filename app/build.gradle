@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "24.0.0"
     defaultConfig {
         applicationId "com.example.hei123.permissiondog"
         minSdkVersion 23
@@ -26,6 +26,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:design:25.0.0'
-    compile project(':mylibrary')
+    compile 'com.android.support:design:24.0.0'
 }
